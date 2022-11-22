@@ -124,7 +124,8 @@ public class Biglietto {
 
 	@Override
 	public String toString() {
-		return "Età del passeggero: " + age +  "\nKm inseriti: " + km 
+		return  "\n-----------------------------------------------" 
+				+ "\nEtà del passeggero: " + age +  "\nKm inseriti: " + km 
 				+ "\nPrezzo biglietto: " + String.format("%.2f", calculatePrice()) + " €" 
 				+ "\nData odierna: " + getLocalDate() + "\nBiglietto flessibile: " + (isFlexible() ? "si" : "no")
 				+ "\nData di scadenza: " + calculateExpiryDate();
